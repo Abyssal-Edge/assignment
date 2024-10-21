@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Anand" />
+    <meta name="description" content="Personal web page of Anand" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Anand</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>About Me</h1>
+    </header>
+    <main>
+      <section aria-labelledby="profile-section">
+        <h2 id="profile-section">Profile</h2>
+        <a
+          href="https://www.instagram.com/the.real_enigma/"
+          target="_blank"
+          aria-label="Instagram Profile"
+        >
+          <img src="anandpic.jpg" alt="Anand" id="profile-pic" />
+        </a>
+      </section>
+      <section aria-labelledby="about-section">
+        <h2 id="about-section">About Me</h2>
+        <p>Here is a paragraph discussing my strengths and weaknesses.</p>
+        <ul>
+          <li>Strength</li>
+          <li>Weakness</li>
+        </ul>
+      </section>
+      <!-- Replace the bucket list section in your index.html with the following -->
+      <section aria-labelledby="bucket-list-section">
+        <h2 id="bucket-list-section">Bucket List</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Item</th>
+              <th>Completed</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Experience the Northern Lights</td>
+              <td>
+                <input
+                  type="checkbox"
+                  aria-label="Experience the Northern Lights"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Visit the Grand Canyon</td>
+              <td>
+                <input type="checkbox" aria-label="Visit the Grand Canyon" />
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Learn to play the guitar</td>
+              <td>
+                <input type="checkbox" aria-label="Learn to play the guitar" />
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Go skydiving</td>
+              <td><input type="checkbox" aria-label="Go skydiving" /></td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Run a marathon</td>
+              <td><input type="checkbox" aria-label="Run a marathon" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section aria-labelledby="media-section">
+        <h2 id="media-section">Media</h2>
+        <p>Here is a clip from the movie Interstellar</p>
+        <video width="320" height="240" controls>
+          <source
+            src="Interstellar _ Murph Saves The World (Full Scene) _ Paramount Movies.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <br /><br />
+        <p>Here is one of my favourite songs - Atlantis by Seafret</p>
+        <audio controls>
+          <source src="Atlantis - Seafret.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </section>
+    </main>
+    <footer>
+      <button id="alert-button">Click Me!</button>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+</html>
